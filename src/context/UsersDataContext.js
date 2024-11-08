@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useEffect, useState, useRef } from 'react'; 
 import { formatDateApi } from '../utils/formatDateApi';
+import usersDummyData from '../dummy-user-data.json'
 
 export const UsersDataContext = createContext(); 
 export const useUsersData = () => useContext(UsersDataContext); 
@@ -19,7 +20,7 @@ export const UsersDataContextProvider = ({ children }) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            const data = await response.json();
+            const data = await response.json() || usersDummyData;
          
             setPageCount(data.lastPage); 
             if (data.data.length !== limit) {  

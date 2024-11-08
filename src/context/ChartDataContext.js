@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from 'react';
 import { useQuery } from '@tanstack/react-query'; 
-
+import data from '../dummy-data.json'
 export const ChartDataContext = createContext();
 
 export const useChartData = () => useContext(ChartDataContext);
@@ -15,11 +15,10 @@ export const ChartDataContextProvider = ({ children, startDate, endDate, selecte
                     selectedPlatforms.map(platform => {
                         const platformQuery = `&platform=${platform}`;
                         return fetch(`${process.env.REACT_APP_DASHBOARD}startDate=${startDate}&endDate=${endDate}${platformQuery}`)
-                            .then(response => response.json());
+                            .then(response => response.json() || data);
                     })
                 );
-
-                // Concatenate data from all platforms
+ 
                 aggregatedData = platformData.reduce((result, data) => {
                     return result.concat(data);
                 }, []);

@@ -1,0 +1,70 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "userDetails": "Liam Smith",
+            "customerName": "Liam Smith",
+            "registerDate": "2023-01-17"
+        },
+        {
+            "id": 2,
+            "userDetails": "Sophia Garcia",
+            "customerName": "Sophia Garcia",
+            "registerDate": "2023-05-08"
+        },
+        {
+            "id": 3,
+            "userDetails": "Emma Brown",
+            "customerName": "Emma Brown",
+            "registerDate": "2023-01-12"
+        },
+        {
+            "id": 7,
+            "userDetails": "Sophia Miller",
+            "customerName": "Sophia Miller",
+            "registerDate": "2023-02-17",
+            "segment": "NEW"
+        },
+        {
+            "id": 8,
+            "userDetails": "Sam Garcia",
+            "customerName": "Sam Garcia",
+            "registerDate": "2023-04-03",
+            "segment": "NEW"
+        },
+        {
+            "id": 9,
+            "userDetails": "Noah Miller",
+            "customerName": "Noah Miller",
+            "registerDate": "2023-03-31"
+        },
+        {
+            "id": 10,
+            "userDetails": "Sophia Jones",
+            "customerName": "Sophia Jones",
+            "registerDate": "2023-03-20"
+        },
+        {
+            "id": 14,
+            "userDetails": "Sam Miller",
+            "customerName": "Sam Miller",
+            "registerDate": "2023-02-23"
+        },
+        {
+            "id": 18,
+            "userDetails": "Noah Smith",
+            "customerName": "Noah Smith",
+            "registerDate": "2023-03-11"
+        },
+        {
+            "id": 19,
+            "userDetails": "James Williams",
+            "customerName": "James Williams",
+            "registerDate": "2023-02-20",
+            "segment": "NEW"
+        }
+    ],
+    "total": 22,
+    "page": "1",
+    "lastPage": 3
+}

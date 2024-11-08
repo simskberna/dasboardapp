@@ -50,7 +50,7 @@ const LoginPage = () => {
         <div className='font-body bg-[#363740] h-full w-full flex items-center justify-center'>
            <div className='login-card md:w-[380px] w-[70%] md:h-[582px] h-auto p-[32px] flex flex-col gap-2 items-center justify-center bg-white rounded-md relative over'>
            <img className='logo' src={logo}></img>
-           <span className='font-[500] text-[19px] text-[#A4A6B3]'>B2Metric</span>
+           <span className='font-[500] text-[19px] text-[#A4A6B3]'>React Dashboard App</span>
             
             <Box 
                 component="form" 
@@ -104,6 +104,7 @@ const LoginPage = () => {
                 style={{boxShadow: '0px 4px 12px 0px #3751FF3D',textTransform:'capitalize',height:'48px',marginTop:'20px',background:'#3751FF',borderRadius:'8px',color:'white',fontWeight:'500',fontSize:'14px',lineHeight:'20px',letterSpacing:'0.2px',textAlign:'center'}}>
                     Log In
                 </Button>
+                <p className='text-[#9FA2B4]'>! For test purposes you can click Log In without any user information to go ahead !</p>
                 {error && <div className='text-red error'>{error}</div>}
                 <div className='font-[400] text-[14px] w-full h-[42px] flex gap-2 items-center justify-center mt-5'>
                 <span className='text-[#9FA2B4]'>Don't have an account? </span>
