@@ -1,6 +1,6 @@
 # React Dashboard App
 
-![Gif]([https://github.com/simskberna/react-dasboard-app/src/assets/react-dashboard-app.gif](https://github.com/simskberna/react-dasboard-app/blob/main/src/assets/react-dashboard-app.gif))
+![Gif](https://github.com/simskberna/react-dasboard-app/blob/main/public/react-dashboard-app.gif)
 
 
 ## Available Scripts
