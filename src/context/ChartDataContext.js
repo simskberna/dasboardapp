@@ -12,10 +12,10 @@ export const ChartDataContextProvider = ({ children, startDate, endDate, selecte
             
             if (selectedPlatforms.length > 0) {
                 const platformData = await Promise.all(
-                    selectedPlatforms.map(platform => {
+                    selectedPlatforms.map(async platform => {
                         const platformQuery = `&platform=${platform}`;
-                        return fetch(`${process.env.REACT_APP_DASHBOARD}startDate=${startDate}&endDate=${endDate}${platformQuery}`)
-                            .then(response => response.json() || data);
+                        const response = await fetch(`${process.env.REACT_APP_DASHBOARD}startDate=${startDate}&endDate=${endDate}${platformQuery}`);
+                        return await (response.json() || data);
                     })
                 );
  
